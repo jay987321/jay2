@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>survey form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 id="title">Jay's Survey Form</h1>
+    <p id="description"> Please fill out this form with the required information</p>
+    <form id="survey-form" action="https://formspree.io/f/mlevwkdz" method="POST"> 
+      
+        <hr> 
+  <label id="name-label">Name <input id="name"  type="text" placeholder="Enter your name" required/></label>
+   <label id="email-label">Email <input  id="email" name="email" type="email" placeholder="Enter your email" required/> </label>
+    <label id="number-label">Age(optional)<input id="number" type="number" min="12" max="100" placeholder="number" required/></label>
+  <label>Which option best describes your current occupation?
+    <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Self employed</option>
+        <option value="4">Other</option>
+      </select>
+      </label>
+      <label> What is your gender?
+        <select name="choose">
+          <option value="">select an option</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+      </label>
+      <label>How well do you know me?
+        <label for="Very Well"><input type="radio" value="Very Well" name="account-type" class="inline"/> Very Well</label>
+    <label for="Casual"><input type="radio" value="Casual" name="account-type" class="inline"/> Casual</label>
+    <label for="Mutual"><input type="radio" value="Mutual" name="account-type"class="inline"/>Mutual</label>
+    <label for="Not Really"><input type="radio" value="Not Really" name="account-type" class="inline"/> Not Really</label>
+       </label> 
+      <label>Would you like to meet junior again in your next life?
+         <label for="Definitely"><input type="radio" value="Definitely" name="account-type" class="inline"/> Definitely</label>
+     <label for="Maybe"><input type="radio" value="Maybe" name="account-type" class="inline"/> Maybe</label>
+     <label for="Not sure"><input type="radio" value="Not sure" name="account-type"class="inline"/> Not sure</label>
+     <label for="Never"><input type="radio" value="Never" name="account-type" class="inline"/> Never</label>
+        </label> 
+        <label>How did we meet?
+     <label for="Social media"><input type="checkbox" value="social media" name="opinion" class="inline"/> Social media</label>
+     <label for="Mutual friend"><input type="checkbox" value="Mutual friend" name="opinion" class="inline"/> Mutual Friend</label>
+     <label for="school mate"><input type="checkbox" value="school mate" name="opinion" class="inline"/>School Mate</label> 
+     <label for="family"><input type="checkbox" value="family" name="opinion" class="inline"/>Family</label>
+        </label>
+        <label for="suggestions">How can I improve:
+          <textarea name="bio" rows="5" cols="60" id="suggestion" placeholder="Write your comments here"></textarea>
+        </label>
+      <input id="submit" type="submit" value="submit" id="submit"/> 
+      <hr class="bottom-line">
+      </form>
+       </body>
+     </html>
